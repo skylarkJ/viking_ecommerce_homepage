@@ -1,0 +1,488 @@
+
+/**************************************
+General
+***************************************/
+
+html  {
+position: relative;
+min-height: 100%; /* For footer on the bottom*/
+width: 100%;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+display: block;
+}
+
+
+
+body {
+font-family: 'Roboto Mono';
+font-size: 100%;
+line-height: 1.7em;
+}
+
+
+
+h3 {
+text-align: center;
+background-color: black;
+color: white;
+height: 40px;
+padding-top: 6px;
+}
+
+h4 {
+	font-weight: 700;
+}
+
+li {
+list-style:none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	max-width: 100%;
+}
+
+/**************************************
+End of General
+***************************************/
+
+
+
+
+
+/**************************************
+A main page wrapper
+***************************************/
+.container-wrapper {
+	max-width: 1960px;
+	margin: 0 auto;
+	
+}
+
+/****************************************
+End of A main page wrapper
+*****************************************/
+
+
+
+
+
+
+
+/******************************************
+Header
+*******************************************/
+
+
+.container-header {
+margin: 0 auto;
+background-color: #44c767;
+color: #fff;
+height: auto;
+padding-top: 10px;
+}
+
+	.container-nav {
+	margin: .5em;
+	height: 90px;
+	bottom: 10%;
+	background-color: #44c767;
+    color: #fff;
+	}
+
+		.storename-style {
+		width: 220px;
+		float: left;
+		padding-left: 5%;
+		padding-right: 4%;
+		font-weight: 900;
+		font-size: 25px;
+		}
+
+		.storename-style:hover {
+		color: orange;
+		}
+
+		.cart {
+			width: 85px;
+			left: 68%;
+			padding-left: 32px;
+		}
+
+
+.container-wrapper .container-header .cart {
+background-image: url("../assets/cart-icon.png");
+background-repeat: no-repeat;
+background-size: 30px;
+float: right;
+}
+
+
+	.background-header {
+	background-image: url("../assets/viking_ship_background_medium.jpg");
+	background-position: right bottom;
+    background-size: 100% 100%;
+    height: 512px;
+	}
+
+
+		.picture-title	{
+	    position: absolute;
+	    top: 410px;
+	    left: 28%;
+	    max-width: 100%;
+	    color: orange;
+	    font-size: 100px;
+	    font-weight: 700;
+	    line-height:1.1;
+	    z-index: 2;
+		}
+
+		.picture-title:hover {
+			opacity: 0.4;
+		}
+
+
+
+
+
+	.container-titles {
+	position: relative;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+	}
+
+
+		.headertitle1-style {
+	    height: auto;
+	    padding: 50px 0;
+	    background-color: black;
+    	color: white;
+		}
+
+
+		.headertitle2-style {
+	    height: auto;
+	    padding: 15px 0;
+	    line-height: 1.5em;
+	    background-color: #eee;
+    	color: #44c767;
+		}
+
+/******************************************
+End of Header
+*******************************************/
+
+
+
+
+
+
+
+
+
+/******************************************
+Content
+*******************************************/
+#container-gallery li {
+border: 5px solid grey;
+
+    
+
+}
+
+#container-gallery li:nth-child (3){
+	clear: left;
+}
+
+
+
+#container-gallery {
+list-style: none;
+margin: 0 auto;
+padding-left: 10%;
+
+}
+
+#container-gallery li {
+width: 25%;
+margin: 2%;
+background-color: #fff;
+color: #253237;
+float: left;
+}
+
+.buy-button {
+	font-size: 25px;
+	background-color: #44c767;
+	color:#fff;
+	font-family: arial;
+	border-top: 10px solid black;
+	border-bottom: 10px solid black;
+	border-left: 30px solid black;
+	border-right: 30px solid black;
+
+	margin: 0;
+    padding: 2% 0 2% 0;
+    text-align: center;
+}
+
+.buy-button:hover {
+background-color: #5cbf2a;
+}
+
+
+
+
+
+#pagingControls ul{
+display:inline;
+padding-left:0.5em;
+}
+
+#pagingControls li{
+display:inline;
+padding:0 0.5em;
+}
+
+
+
+
+
+
+
+
+
+/******************************************
+End of Content
+*******************************************/
+
+
+
+
+
+
+
+
+/******************************************
+Footer
+*******************************************/
+
+/* page-row {  For footer on the bottom 
+	display: table-row;
+	height: 1px;
+}*/
+
+/*.page-row-expanded {   For footer on the bottom
+	height: 100%;
+}*/
+
+
+.container-footer {
+	background: #44c767;
+	padding-top: 2em;
+	padding-bottom: 4em;
+	margin: 0 auto; 
+	clear: both;
+	
+}
+
+	.container-footer .footer-title {
+	max-width: 256px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+
+	.container-footer .footer-contact {
+	max-width: 256px;
+	max-height: 256px; 
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+    padding-bottom: 5px;
+	background-color: white;
+	}
+
+	.container-footer .footer-contact .footer-info {
+	margin: 14px auto; 
+	position: relative; 
+	width: 100%; 
+	height: 100%; 
+	background-color: #fff; 
+	}
+
+	.container-footer .footer-contact .footer-info a i {
+	width: 20px;
+	height: 20px;
+	font-size: 25px;
+	text-align: center;
+	margin-right: 10px;
+	}
+
+
+	.container-footer .footer-contact .footer-info a {
+	color: #44c767;;
+    vertical-align: super;
+    padding-left: 30px;
+	}
+
+	.container-footer .footer-contact .footer-info a:hover {
+	color: orange;
+	font-weight: bold;
+	}
+
+    
+
+
+	
+
+
+
+
+/******************************************
+Media
+*******************************************/
+
+@media screen and (max-width:1200px) {
+	body {
+		font-size: 100%;
+	}
+
+.picture-title {
+	top: 470px;
+	left: 28%;
+	font-size: 500%;
+	line-height: 1;
+}
+
+#container-gallery li:nth-child (4){
+	clear: left;
+}
+
+
+
+#container-gallery {
+list-style: none;
+margin: 0 auto;
+padding-left: 10%;
+
+}
+
+#container-gallery li {
+width: 40%;
+margin: 2%;
+background-color: #fff;
+color: #253237;
+float: left;
+}
+
+}
+
+
+@media screen and (max-width:680px) {
+
+body {
+		font-size: 80%;
+	}
+
+.picture-title {
+	top: 480px;
+	left: 2%;
+	font-size: 400%;
+	line-height: 1.4;
+}
+
+
+
+#container-gallery li:nth-child (3){
+	clear: left;
+}
+
+
+
+#container-gallery {
+list-style: none;
+margin: 0 auto;
+padding-left: 10%;
+
+}
+
+#container-gallery li {
+width: 90%;
+margin-left: 0%;
+margin-right: 3%;
+background-color: #fff;
+color: #253237;
+float: left;
+}
+
+}
+
+
+@media screen and (max-width:480px) {
+
+body {
+	font-size: 90%;
+}
+
+
+.picture-title {
+	top: 480px;
+	left: 2%;
+	font-size: 400%;
+	line-height: 1.4;
+}
+
+#container-gallery li:nth-child (1){
+	clear: left;
+}
+
+
+
+#container-gallery {
+list-style: none;
+margin: 0 auto;
+padding-left: 0px;
+
+}
+
+#container-gallery li {
+width: 97%;
+background-color: #fff;
+color: #253237;
+float: left;
+margin-left: 0%;
+margin-right: 3%;
+
+}
+
+}
+
+
+/******************************************
+End of Media
+*******************************************/
+
+
+
+
+
+
+
+
+
+
+ 
