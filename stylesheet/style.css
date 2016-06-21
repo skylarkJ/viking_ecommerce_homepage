@@ -108,12 +108,10 @@ padding-top: 10px;
 		padding-right: 4%;
 		font-weight: 900;
 		font-size: 25px;
+		color: #fff;
 		}
 
-		.storename-style:hover {
-		color: #721326;
-		font-size: 30px;
-		}
+		
 
 		.cart {
 		width: 85px;
@@ -143,20 +141,12 @@ float: right;
 	    top: 410px;
 	    left: 28%;
 	    max-width: 100%;
-	    color: #721326;
+	    color: #fff;
 	    font-size: 100px;
 	    font-weight: 700;
 	    line-height:1.1;
 	    z-index: 2;
-	    opacity: 0.5;
 		}
-
-		.picture-title:hover {
-		opacity: 1;
-		}
-
-
-
 
 
 	.container-titles {
