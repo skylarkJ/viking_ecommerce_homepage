@@ -1,9 +1,9 @@
 var Imtech = {};
 Imtech.Pager = function() {
-    this.paragraphsPerPage = 3;
+    this.paragraphsPerPage = 1;
     this.currentPage = 1;
     this.pagingControlsContainer = '#pagingControls';
-    this.pagingContainerPath = '#content';
+    this.pagingContainerPath = '#container-gallery';
 
     this.numPages = function() {
         var numPages = 0;
@@ -42,4 +42,4 @@ Imtech.Pager = function() {
 
         $(container).html(pagingControls);
     }
-}im
+}

@@ -35,20 +35,25 @@ padding-top: 6px;
 }
 
 h4 {
-	font-weight: 700;
+font-weight: 700;
 }
 
 li {
 list-style:none;
 }
 
-a {
-	text-decoration: none;
-	color: black;
+a { /* just for pagination */
+text-decoration: none;
+color: black;
+text-decoration: underline;
+}
+
+.style-links {
+text-decoration: none; /* for all links except pagination */
 }
 
 img {
-	max-width: 100%;
+max-width: 100%;
 }
 
 /**************************************
@@ -63,16 +68,13 @@ End of General
 A main page wrapper
 ***************************************/
 .container-wrapper {
-	max-width: 1960px;
-	margin: 0 auto;
-	
+max-width: 1960px;
+margin: 0 auto;	
 }
 
 /****************************************
 End of A main page wrapper
 *****************************************/
-
-
 
 
 
@@ -109,13 +111,14 @@ padding-top: 10px;
 		}
 
 		.storename-style:hover {
-		color: orange;
+		color: #721326;
+		font-size: 30px;
 		}
 
 		.cart {
-			width: 85px;
-			left: 68%;
-			padding-left: 32px;
+		width: 85px;
+		left: 68%;
+		padding-left: 32px;
 		}
 
 
@@ -128,7 +131,7 @@ float: right;
 
 
 	.background-header {
-	background-image: url("../assets/viking_ship_background_medium.jpg");
+	background-image: url("../assets/viking_ship_background_medium.png");
 	background-position: right bottom;
     background-size: 100% 100%;
     height: 512px;
@@ -140,15 +143,16 @@ float: right;
 	    top: 410px;
 	    left: 28%;
 	    max-width: 100%;
-	    color: orange;
+	    color: #721326;
 	    font-size: 100px;
 	    font-weight: 700;
 	    line-height:1.1;
 	    z-index: 2;
+	    opacity: 0.5;
 		}
 
 		.picture-title:hover {
-			opacity: 0.4;
+		opacity: 1;
 		}
 
 
@@ -188,21 +192,15 @@ End of Header
 
 
 
-
-
-
 /******************************************
 Content
 *******************************************/
 #container-gallery li {
 border: 5px solid grey;
-
-    
-
 }
 
 #container-gallery li:nth-child (3){
-	clear: left;
+clear: left;
 }
 
 
@@ -223,27 +221,27 @@ float: left;
 }
 
 .buy-button {
-	font-size: 25px;
-	background-color: #44c767;
-	color:#fff;
-	font-family: arial;
-	border-top: 10px solid black;
-	border-bottom: 10px solid black;
-	border-left: 30px solid black;
-	border-right: 30px solid black;
-
-	margin: 0;
-    padding: 2% 0 2% 0;
-    text-align: center;
+font-size: 25px;
+background-color: #44c767;
+color:#fff;
+font-family: arial;
+border-top: 10px solid black;
+border-bottom: 10px solid black;
+border-left: 30px solid black;
+border-right: 30px solid black;
+margin: 0;
+padding: 2% 0 2% 0;
+text-align: center;
 }
 
 .buy-button:hover {
 background-color: #5cbf2a;
 }
 
-
-
-
+#pagingControls {
+clear: both;
+text-align: center;
+}
 
 #pagingControls ul{
 display:inline;
@@ -255,19 +253,9 @@ display:inline;
 padding:0 0.5em;
 }
 
-
-
-
-
-
-
-
-
 /******************************************
 End of Content
 *******************************************/
-
-
 
 
 
@@ -278,23 +266,13 @@ End of Content
 Footer
 *******************************************/
 
-/* page-row {  For footer on the bottom 
-	display: table-row;
-	height: 1px;
-}*/
-
-/*.page-row-expanded {   For footer on the bottom
-	height: 100%;
-}*/
-
 
 .container-footer {
-	background: #44c767;
-	padding-top: 2em;
-	padding-bottom: 4em;
-	margin: 0 auto; 
-	clear: both;
-	
+background: #44c767;
+padding-top: 2em;
+padding-bottom: 4em;
+margin: 0 auto; 
+clear: both;	
 }
 
 	.container-footer .footer-title {
@@ -340,16 +318,9 @@ Footer
 	}
 
 	.container-footer .footer-contact .footer-info a:hover {
-	color: orange;
+	color: #721326;;
 	font-weight: bold;
 	}
-
-    
-
-
-	
-
-
 
 
 /******************************************
@@ -357,19 +328,20 @@ Media
 *******************************************/
 
 @media screen and (max-width:1200px) {
-	body {
-		font-size: 100%;
-	}
+
+body {
+font-size: 100%;
+}
 
 .picture-title {
-	top: 470px;
-	left: 28%;
-	font-size: 500%;
-	line-height: 1;
+top: 470px;
+left: 28%;
+font-size: 500%;
+line-height: 1;
 }
 
 #container-gallery li:nth-child (4){
-	clear: left;
+clear: left;
 }
 
 
@@ -378,7 +350,6 @@ Media
 list-style: none;
 margin: 0 auto;
 padding-left: 10%;
-
 }
 
 #container-gallery li {
@@ -395,20 +366,20 @@ float: left;
 @media screen and (max-width:680px) {
 
 body {
-		font-size: 80%;
+font-size: 80%;
 	}
 
 .picture-title {
-	top: 480px;
-	left: 2%;
-	font-size: 400%;
-	line-height: 1.4;
+top: 480px;
+left: 2%;
+font-size: 400%;
+line-height: 1.4;
 }
 
 
 
 #container-gallery li:nth-child (3){
-	clear: left;
+clear: left;
 }
 
 
@@ -435,19 +406,19 @@ float: left;
 @media screen and (max-width:480px) {
 
 body {
-	font-size: 90%;
+font-size: 90%;
 }
 
 
 .picture-title {
-	top: 480px;
-	left: 2%;
-	font-size: 400%;
-	line-height: 1.4;
+top: 480px;
+left: 2%;
+font-size: 400%;
+line-height: 1.4;
 }
 
 #container-gallery li:nth-child (1){
-	clear: left;
+clear: left;
 }
 
 
@@ -456,7 +427,6 @@ body {
 list-style: none;
 margin: 0 auto;
 padding-left: 0px;
-
 }
 
 #container-gallery li {
@@ -466,7 +436,6 @@ color: #253237;
 float: left;
 margin-left: 0%;
 margin-right: 3%;
-
 }
 
 }
