@@ -137,15 +137,13 @@ float: right;
 
 
 		.picture-title	{
-	    position: absolute;
-	    top: 450px;
-	    left: 28%;
-	    max-width: 100%;
 	    color: #fff;
 	    font-size: 100px;
 	    font-weight: 700;
 	    line-height:1.1;
-	    z-index: 2;
+	    text-align: center;
+	    padding-top: 390px;
+	    opacity:.3;
 		}
 
 
@@ -208,6 +206,20 @@ margin: 2%;
 background-color: #fff;
 color: #253237;
 float: left;
+}
+
+.price {
+width: 60px;
+height: 60px;
+font-family:arial;
+line-height: 3.7em;
+text-align: center;
+background: #c1a57c;
+color: black;
+float: right;
+border-radius: 50% 50%;
+margin-right: 5px;
+margin-top: -14px;
 }
 
 .buy-button {
@@ -325,7 +337,7 @@ font-size: 100%;
 
 .picture-title {
 top: 470px;
-left: 28%;
+left: 22%;
 font-size: 500%;
 line-height: 1;
 }
@@ -401,10 +413,9 @@ font-size: 90%;
 
 
 .picture-title {
-top: 480px;
-left: 2%;
 font-size: 350%;
 line-height: 1.4;
+padding-top: 440px;
 }
 
 #container-gallery li:nth-child (1){
